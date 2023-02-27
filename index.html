@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title> PORTFOLIO </title>
+        <link rel = "stylesheet" href = "style.css">
+    </head>
+<body>
+
+        <div id= "header">
+
+            <div class="container">
+
+                <nav>
+                    <img src="TF.png" class="logo">
+                    <ul>
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#">About</a></li>
+                       
+                        <li><a href="#">Portfolio</a></li>
+                        <li><a href="#">Contact</a></li>
+                    </ul> 
+                </nav>
+
+                <div class = "header-text">
+                    <p>ELECTRONICS AND COMMUNICATION ENGINEERING</p>
+                    <h1><span class="multiple-text"></span><br>from Coimbatore</h1>
+                </div>
+
+               
+               
+
+                <!-- ABOUT -->
+                <div id = "about">
+                    <div class = "container">
+                        <div class = "row">
+                            <div class = "about-col-1">
+                                <img src="portfoliopic.jpg">
+                            <!-- <img style="float:left; width:300px;height: 420px; margin-top: -320px; margin-right: -100px;" src="portfoliopic.jpg"> -->
+                            
+                        </div>
+                            <div class = "about-col-2">
+                                <h1 class="sub-title">About Me</h1>
+                                <p>I'm Aspiring Engineering graduate with fundamental knowledge of software design, development, and testing. Seeking a role in a progressive organization in a highly motivating and challenging environment that provides 
+                                   the best opportunity to grow and utilize my potential to the fullest, 
+                                   to achieve the organizations’ goal and also my personal goals.</p>
+                                   
+                                   <div class="tab-titles">
+                                    <p class="tab-links active-link" onclick="opentab('skills ')"> Technical Skills</p>
+                                    <p class="tab-links" onclick="opentab('programming')">Programming Languages Known </p>
+                                    <p class="tab-links" onclick="opentab('education')">Education</p>
+                                    </div>
+                               
+                                    
+                                    <div class="tab-contents active-tab" id="skills">
+                                        <ul>
+                                            <li><span>Basics of MATLAB</span></li>
+                                            <li> <span>Basics of DSA </span><br>(Arrays,Linked List,Trees,Graphs)</li>
+                                        </ul>
+                                    </div>
+
+
+                                    <div class="tab-contents" id="programming">
+                                        <ul>
+                                            <li><span>C</span></li>
+                                            <li> <span>C++</span></li>
+                                        </ul>
+                                    </div>
+
+                                   
+                                    <div class="tab-contents" id="education">
+                                        <ul>
+                                            <li><span>2020 - 2024</span><br>BANNARI AMMAN INSTITUTE OF TECHNOLOGY,
+                                                                             SATHYAMANGALAM, ERODE<br>B.E ELECTRONICS AND COMMUNICATION ENGINEERING<br>
+                                                                             Expected to graduate in 2024<br>
+                                                                             9.07 CGPA (Up to 5th Semester)</li>
+                                            
+                                            <li><span>2018 - 2020</span><br>VIDYAA VIKAS MATRICULATION GIRLS HIGHER SECONDARY SCHOOL, KARAMADAI<br>
+                                                                            HSE in 2020(12th standard)<br>
+                                                                            Prevailed an aggregate of 68%.</li>
+
+                                             <li><span>2017 - 2018</span><br>STANES ANGLO INDIAN HIGHER SECONDARY SCHOOL, COIMBATORE<br>
+                                                                             SSLC in 2018(10th standard)<br>
+                                                                             Prevailed an aggregate of 87%.</li>
+                                        </ul>
+                                    </div>
+
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                </div>
+            </div>
+
+        </div>
+       
+       
+       <script>
+           
+           var tablinks = document.getElementsByClassName("tab-links");
+            var tabcontents = document.getElementsByClassName("tab-contents");
+           
+           
+            function opentab(tabname){
+                
+                for(tablink of tablinks){
+                    tablink.classList.remove("active-link");
+                }
+
+                for(tabcontent of tabcontents){
+                    tabcontent.classList.remove("active-tab");
+                }
+                event.currentTarget.classList.add("active-link");  //to display the color pink when we click on it 
+                document.getElementById(tabname).classList.add("active-tab");
+            }
+        </script>
+       
+       
+       <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+        <script src="script.js"></script>
+        
+</body>
+</html>
