@@ -199,15 +199,48 @@ nav ul li a:hover::after{
 
 
 #projects{
-    padding: 5px 0;
+    padding: 50px 0;
 }
 
-.projectss-list{
+.projects-list{
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
     grid-gap: 40px;
     margin-top: 100px;
 } 
+
+
+.project{
+    border-radius: 10px;
+    position: relative;
+    overflow: hidden;
+}
+
+.project img{
+    width:100%;
+    border-radius: 10px;
+    display: block;
+}
+
+
+/* .layer{
+    width:100%;
+    heigth:100%;
+    background: linear-gradient(rgba(0,0,0,0.6),#ff004f);
+    border-radius: 10px;
+    position:absolute;
+    left:0;
+    bottom:0;
+    overflow: hidden;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding:0 40px;
+    text-align: center;
+} */
+
+
 
 .projects-list div{
     background: #262626;
@@ -227,6 +260,79 @@ nav ul li a:hover::after{
 }
 
 .projects-list div:hover{
+    background: #ff004f;
+    transform: translateY(-10px);
+}
+
+
+
+#idea{
+    padding: 5px 0;
+}
+
+.idea-list{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-gap: 40px;
+    margin-top: 100px;
+} 
+
+.idea-list div{
+    background: #262626;
+    padding: 40px;
+    font-size: 13px;
+    font-weight: 300;
+    border-radius: 10px;
+    transition: background 0.5s, transform 0.5s;
+}
+
+
+
+.idea-list div h3{
+    font-size: 30px;
+    font-weight: 500;
+    margin-bottom: 15px;
+}
+
+.idea-list div:hover{
+    background: #ff004f;
+    transform: translateY(-10px);
+}
+
+
+
+
+
+
+#internship{
+    padding: 5px 0;
+}
+
+.internship-list{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-gap: 40px;
+    margin-top: 100px;
+} 
+
+.internship-list div{
+    background: #262626;
+    padding: 40px;
+    font-size: 13px;
+    font-weight: 300;
+    border-radius: 10px;
+    transition: background 0.5s, transform 0.5s;
+}
+
+
+
+.internship-list div h3{
+    font-size: 30px;
+    font-weight: 500;
+    margin-bottom: 15px;
+}
+
+.internship-list div:hover{
     background: #ff004f;
     transform: translateY(-10px);
 }
