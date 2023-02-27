@@ -14,15 +14,17 @@
 
                 <nav>
                     <img src="TF.png" class="logo">
-                    <ul>
-                        <li><a href="#">Home</a></li>
-                        <li><a href="#">About</a></li>
+                    <ul id="sidemenu">
+                        <li><a href="#header">Home</a></li>
+                        <li><a href="#about">About</a></li>
                        
-                        <li><a href="#">Projects</a></li>
-                        <li><a href="#">Achievements</a></li>
-                        <li><a href="#">Internships</a></li>
-                        <li><a href="#">Contact</a></li>
+                        <li><a href="#projects">Projects</a></li>
+                        <li><a href="#achievements">Achievements</a></li>
+                        <!-- <li><a href="#internships">Internships</a></li> -->
+                        <li><a href="#contact">Contact</a></li>
+                        <i class="fas fa-times" onclick="closemenu()"></i>
                     </ul> 
+                    <i class="fa fa-bars" onclick="openmenu()"></i>
                 </nav>
 
                 <div class = "header-text">
@@ -287,10 +289,24 @@
                 document.getElementById(tabname).classList.add("active-tab");
             }
         </script>
+
+        <script>
+            var sidemenu = document.getElementById("sidemenu");
+
+            function openmenu(){
+                sidemenu.style.right = "0";
+            }
+
+            function closemenu(){
+                sidemenu.style.right = "-200px";
+            }
+           
+        </script>
        
        
        <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
-        <script src="script.js"></script>
+        
+       <script src="script.js"></script>
         
 </body>
 </html>
