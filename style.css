@@ -83,6 +83,7 @@ nav ul li a:hover::after{
 /* ABOUT */
 
 #about{
+    margin-top: 145px;
     padding: 80px 0;
     color: #ababab;
 }
@@ -101,11 +102,16 @@ nav ul li a:hover::after{
 .about-col-1 img{
 
     width: 100%;
-    border-radius: 15Spx;
+    border-radius: 15px;
 }
 
 .about-col-2{
     flex-basis: 60% ;
+}
+
+.about-col-2 p{
+    font-size: 22px;
+
 }
 
 .sub-title{
@@ -145,11 +151,12 @@ nav ul li a:hover::after{
 .tab-contents ul li{
     list-style: none;
     margin: 10px 0;
+    font-size: 18px;
 }
 
 .tab-contents ul li span{
     color: #b54769;
-    font-size:14px;
+    font-size:20px;
 }
 
 .tab-contents{
@@ -163,6 +170,7 @@ nav ul li a:hover::after{
 /* ACHIEVEMENTS */
 
 #achievements{
+    margin-top: 350px;
     padding: 400px 0;
 }
 
@@ -360,8 +368,10 @@ nav ul li a:hover::after{
 }
 
 .btn.btn2{
+    padding:15px;
     display: inline-block;
     background: #ff004f;
+
 }
 
 .contact-right form{
@@ -452,4 +462,54 @@ nav .fas{
     .contact-left, .contact-right{
         flex-basis: 100%;
     }
+}
+
+.progress-bar{
+	position: relative;
+	width: 100%;
+	height: 5px;
+	background-color: #808080;
+	border-radius: 15px;
+	margin-bottom: 20px;
+}
+.progress-bar::after{
+	position: absolute;
+	content: attr(value);
+	top: -35px;
+	right: 0;
+	color: #808080;
+	font-size: 18px;
+}
+.skill .progress-line{
+	position: absolute;
+	width: 0%;
+	height: 6px;
+	background-color: #d03645;
+	border-radius: 15px;
+	top: -1px;
+	animation: animate 1.5s cubic-bezier(1, 0.2, 0.2, 1) forwards;
+}
+
+.subject{
+	font-size: 18px;
+	font-weight: thin;
+	color: #808080;
+	padding-bottom: 15px;
+	text-transform: uppercase;
+}
+@keyframes animate{
+	100%{
+		width: 100%;
+	}
+}
+.progress-line::after{
+	content: '';
+	position: absolute;
+	width: 13px;
+	height: 13px;
+	border-radius: 50%;
+	top: 50%;
+	left: 100%;
+	transform: translate(-50%, -50%);
+	background-color: #d03645;
 }
